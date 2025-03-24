@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './component/Home';
+import Navbar from './component/Navbar';
+import Signin from './component/Signin';
+import Signup from './component/Signup';
+import ForgotPassword from "./component/ForgotPassword"
+import Slider from './component/Slider';
+import Category_slide from './component/Category-slide/Category_slide';
+import Product from './component/Product';
+
+
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Routes>
+
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/Navbar' element={<Navbar />}></Route>
+        <Route path='/Signin' element={<Signin />}></Route>
+        <Route path='/Signup' element={<Signup />}></Route>
+        <Route path='/ForgotPassword' element={<ForgotPassword />}></Route>
+        <Route path='/Slider' element={<Slider />}></Route>
+
+        <Route path='Category_slide' element={<Category_slide />}></Route>
+        <Route path='/Product' element={<Product/>}></Route>
+    
+
+      </Routes>
+
+
+
+
+    </>
+
   );
 }
 
-export default App;
+export default App

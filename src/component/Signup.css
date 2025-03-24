@@ -1,0 +1,26 @@
+.signup-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .signup-container input, select, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .signup-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-container button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,89 @@
+/* Combined Container */
+.search-and-slider-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Search Container */
+  .special-offers {
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5px;
+  }
+  
+  .search-container h2 {
+    width: 95%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+  }
+  
+  .search-input {
+    width: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    transition: width 0.3s ease;
+  }
+  
+  .search-input.active {
+    width: 100px; /* Adjust width as needed */
+    padding: 5px 10px;
+    float: right;
+    border: 1px solid #ccc;
+  }
+  
+  .search-icon i {
+    padding: 7px;
+    border-radius: 50px;
+    background: #46434367;
+    cursor: pointer;
+  }
+  
+  /* Slider */
+  .slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .navigation-dots {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #0313e7;
+  }

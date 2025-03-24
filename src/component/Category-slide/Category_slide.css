@@ -1,0 +1,67 @@
+.category-slide {
+    padding: 20px;
+    max-width: 1200px; /* Limit the maximum width of the carousel */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden;
+  }
+  
+  .category-item {
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05); /* Add a slight zoom effect on hover */
+  }
+  
+  .category-image {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+  
+  .category-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .slick-dots li{
+    display: none;
+  }
+
+ 
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .category-image {
+      height: 180px; /* Adjust height for smaller screens */
+    }
+  
+    .category-name {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .category-image {
+      height: 100px; /* Adjust height for tablets */
+    }
+  
+    .category-name {
+      font-size: 14px; /* Adjust font size for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-image {
+      height: 80px; /* Adjust height for mobile devices */
+    }
+  
+    .category-name {
+      font-size: 12px; /* Adjust font size for mobile devices */
+    }
+  }
