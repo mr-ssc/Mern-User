@@ -1,0 +1,159 @@
+/* Account.css */
+
+/* Base Styles */
+.account-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .account-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+  }
+  
+  .account-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+  
+  .account-details {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .account-details p {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .account-details p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-details strong {
+    color: #3498db;
+    margin-right: 0.5rem;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7f8c8d;
+    margin-top: 3rem;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .logout-button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem auto 0;
+    padding: 0.8rem;
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logout-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logout-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .account-container {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .account-title {
+      font-size: 1.5rem;
+    }
+    
+    .account-details {
+      padding: 1.5rem;
+    }
+    
+    .logout-button {
+      max-width: 150px;
+      padding: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .account-container {
+      margin: 0.5rem;
+      padding: 1rem;
+    }
+    
+    .account-title {
+      font-size: 1.3rem;
+    }
+    
+    .account-details {
+      padding: 1rem;
+    }
+    
+    .account-details p {
+      margin: 0.8rem 0;
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+    
+    .logout-button {
+      max-width: 100%;
+    }
+  }

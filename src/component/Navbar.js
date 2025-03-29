@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Import the CSS file for styling
-import logo  from "./Img/logo.png"
+import logo from "./Img/logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +22,20 @@ const Navbar = () => {
 
       {/* Logo on the left for normal screens, centered for responsive screens */}
       <div className="navbar-center">
-        <img src={logo} alt="Aema Logo" className="logo" />
+        <a href='/'>
+          <img src={logo} alt="Aema Logo" className="logo" />
+        </a>
       </div>
 
       {/* Icons on the right */}
       <div className="navbar-right">
+
         <div className="navbar-icons">
+
+        <a href="/">
+            <i className="fa-solid fa-home"></i> Home
+          </a>
+
           <a href="/Cart">
             <i className="fa-solid fa-cart-shopping"></i> Cart
           </a>

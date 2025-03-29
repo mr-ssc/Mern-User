@@ -8,6 +8,9 @@ import ForgotPassword from "./component/ForgotPassword"
 import Slider from './component/Slider';
 import Category_slide from './component/Category-slide/Category_slide';
 import Product from './component/Product';
+import Account from './component/Account';
+import Cart from './component/Cart';
+import Order from './component/Order';
 
 
 
@@ -29,6 +32,9 @@ function App() {
         <Route path='/Signup' element={<Signup />}></Route>
         <Route path='/ForgotPassword' element={<ForgotPassword />}></Route>
         <Route path='/Slider' element={<Slider />}></Route>
+        <Route path='/Account' element={<Account/>} ></Route>
+        <Route path='/cart' element={<Cart/>} ></Route>
+        <Route path='/Order' element={<Order/>}></Route>
 
         <Route path='Category_slide' element={<Category_slide />}></Route>
         <Route path='/Product' element={<Product/>}></Route>
