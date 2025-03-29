@@ -33,7 +33,7 @@ const Signin = () => {
       );
   
       // 2. Verify with backend using Firebase UID
-      await axios.post("http://localhost:8888/api/users/signin", {
+      await axios.post("https://mern-backend-sable.vercel.app/api/users/signin", {
         email: formData.email,
         firebaseUid: userCredential.user.uid
       });

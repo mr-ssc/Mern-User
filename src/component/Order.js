@@ -53,7 +53,7 @@ const Order = () => {
                 status: "Pending",
             }));
     
-            await axios.post("http://localhost:8888/api/orders/place", { orders: orderData });
+            await axios.post("https://mern-backend-sable.vercel.app/api/orders/place", { orders: orderData });
     
             setOrderPlaced(true);
             alert("Order placed successfully!");

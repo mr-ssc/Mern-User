@@ -22,7 +22,7 @@ const Product = () => {
 
     const fetchProducts = async () => {
         try {
-            const response = await axios.get("http://localhost:8888/api/product");
+            const response = await axios.get("https://mern-backend-sable.vercel.app/api/product");
             setProducts(response.data);
             setLoading(false);
         } catch (error) {

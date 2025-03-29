@@ -14,7 +14,7 @@ const ForgotPassword = () => {
       await sendPasswordResetEmail(auth, email);
 
       // Backend API call karo
-      await axios.post("http://localhost:8888/api/user/forgot-password", { email });
+      await axios.post("https://mern-backend-sable.vercel.app/api/user/forgot-password", { email });
 
       toast.success("Password reset email sent!");
     } catch (error) {

@@ -9,7 +9,7 @@ const Category_slide = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('http://localhost:8888/api/category')
+    fetch('https://mern-backend-sable.vercel.app/api/category')
       .then((response) => response.json())
       .then((data) => setCategories(data))
       .catch((error) => console.error('Error fetching categories:', error));

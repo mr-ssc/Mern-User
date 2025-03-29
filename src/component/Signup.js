@@ -83,7 +83,7 @@ const Signup = () => {
       });
 
       // Send user data to MongoDB via backend API
-      await axios.post("http://localhost:8888/api/users/signup", {
+      await axios.post("https://mern-backend-sable.vercel.app/api/users/signup", {
         uid: user.uid,
         name: formData.name,
         phone: formData.phone,
