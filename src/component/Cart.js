@@ -105,7 +105,7 @@ const Cart = () => {
         }));
 
         try {
-            const res = await fetch("http://localhost:8888/api/orders/place-order", {
+            const res = await fetch("https://mern-backend-sable.vercel.app/api/orders/place-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(newOrders),

@@ -12,7 +12,7 @@ const Order = () => {
         onAuthStateChanged(auth, async (currentUser) => {
             if (currentUser) {
                 try {
-                    const res = await fetch(`http://localhost:8888/api/orders/user-orders/${currentUser.uid}`);
+                    const res = await fetch(`https://mern-backend-sable.vercel.app/api/orders/user-orders/${currentUser.uid}`);
                     const data = await res.json();
                     setOrders(data);
                 } catch (error) {
