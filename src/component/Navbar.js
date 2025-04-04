@@ -32,7 +32,7 @@ const Navbar = () => {
 
         <div className="navbar-icons">
 
-        <a href="/">
+          <a href="/">
             <i className="fa-solid fa-home"></i> Home
           </a>
 
@@ -41,6 +41,10 @@ const Navbar = () => {
           </a>
           <a href="/Account">
             <i className="fa-solid fa-user"></i> Account
+          </a>
+
+          <a href="/Order">
+            <i className="fa-solid fa-boxes-packing"></i>Order
           </a>
         </div>
       </div>
@@ -52,6 +56,10 @@ const Navbar = () => {
         </a>
         <a href="/Account">
           <i className="fa-solid fa-user"></i> Account
+        </a>
+
+        <a href="/Order">
+          <i className="fa-solid fa-boxes-packing"></i>Order
         </a>
       </div>
 
